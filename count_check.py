@@ -10,6 +10,3 @@ def get_success_num(url):
             return int(line.split(">")[1].split("/")[0])
 
     return 0
-
-
-# print(get("https://boyawards.secure-platform.com/a/gallery/rounds/12/vote/9107"))
