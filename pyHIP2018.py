@@ -49,16 +49,16 @@ def loop_tab_based(driver: webdriver.Chrome, project: Project):
 if __name__ == "__main__":
     tapa1 = Project("Tapa",
                     "https://idhipawards.secure-platform.com/a/gallery/rounds/15/vote/16489",
-                    3500)
+                    4000)
     riverchair2 = Project("River chair 2 ",
                           "https://idhipawards.secure-platform.com/a/gallery/rounds/15/vote/16482",
-                          1800)
+                          4000)
     riverchair3 = Project("River chair 3 ",
                           "https://idhipawards.secure-platform.com/a/gallery/rounds/15/vote/15076",
-                          2500)
+                          4500)
     riverchair4 = Project("River chair 4",
                           "https://idhipawards.secure-platform.com/a/gallery/rounds/15/vote/16448",
-                          1600)
+                          3600)
 
-    loop_initialize(tapa1)
+    loop_initialize(riverchair4)
 
