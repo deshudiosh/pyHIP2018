@@ -59,8 +59,10 @@ def count_logs_and_move_to_used():
 
 
 while(True):
+    interval = 5  # interval in seconds
     count = count_logs_and_move_to_used()
     t = datetime.datetime.now()
-    print(":".join([str(t.hour), str(t.minute), str(t.second)]), count, "logs counted!")
-    sleep(10)
+    # print(":".join([str(t.hour), str(t.minute), str(t.second)]), count, "logs counted!")
+    print(t.strftime("%H:%M:%S"), count, "logs counted. Logs per sec:", count//interval)
+    sleep(interval)
 
